@@ -1,6 +1,6 @@
 {
   "name": "coz-tmpl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build-in templates for coz.",
   "main": "lib",
   "scripts": {
@@ -43,7 +43,7 @@
     "ape-testing": "^1.1.6",
     "ape-tmpl": "^1.0.7",
     "ape-updating": "^1.0.1",
-    "coz": "^1.5.0",
+    "coz": "^2.0.3",
     "injectmock": "^1.1.2",
     "mkdirp": "^0.5.1"
   }
