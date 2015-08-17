@@ -1,6 +1,11 @@
 Usage
 -----
 
+{{#each vars.usageIndices}}
++ [{{{this}}}](#{{spinalcase this}})
+{{/each}}
+
+
 ### Generating index.js for a Module Directory.
 
 `.indexJsBud(config)` defines a bud for a index.js

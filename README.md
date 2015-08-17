@@ -47,6 +47,10 @@ npm install coz-tmpl --save-dev
 Usage
 -----
 
++ [Generating index.js for a Module Directory.](#generating-index-js-for-a-module-directory-)
++ [Generating nodeunit Test File.](#generating-nodeunit-test-file-)
+
+
 ### Generating index.js for a Module Directory.
 
 `.indexJsBud(config)` defines a bud for a index.js
