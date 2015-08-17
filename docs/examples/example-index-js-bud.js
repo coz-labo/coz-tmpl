@@ -6,6 +6,6 @@ module.exports = cozTmpl.indexJsBud({
     module: 'foo'
 });
 
-if (!moule.parent) {
+if (!module.parent) {
     require('coz').render(__filename);
 }
