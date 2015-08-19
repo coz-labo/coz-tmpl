@@ -7,6 +7,14 @@
 
 var {{camelcase name}} = require('{{relative}}');
 
+exports.setUp = function(done) {
+    done();
+};
+
+exports.tearDown = function(done) {
+    done();
+};
+
 exports['{{sentencecase name}}'] = function(test){
 
     test.done();

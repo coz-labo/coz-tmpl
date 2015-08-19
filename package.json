@@ -1,6 +1,6 @@
 {
   "name": "coz-tmpl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Build-in templates for coz.",
   "main": "lib",
   "scripts": {
@@ -29,6 +29,7 @@
   "dependencies": {
     "argx": "^1.1.6",
     "arrayfilter": "^1.0.6",
+    "arrayreduce": "^1.0.2",
     "arraysort": "^1.0.2",
     "async": "^1.4.2",
     "coz-bud": "^1.0.0",
