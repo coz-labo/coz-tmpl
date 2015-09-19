@@ -21,6 +21,7 @@ coz-tmpl
 [bd_gemnasium_shield_url]: https://gemnasium.com/coz-repo/coz-tmpl.svg
 [bd_npm_url]: http://www.npmjs.org/package/coz-tmpl
 [bd_npm_shield_url]: http://img.shields.io/npm/v/coz-tmpl.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/coz-tmpl.svg?style=flat
 
 <!-- Badge End -->
 
@@ -34,9 +35,13 @@ Build-in templates for coz.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+
+<a name="section-doc-readme-01-installation-md"></a>
 Installation
 -----
 
@@ -44,11 +49,17 @@ Installation
 npm install coz-tmpl --save-dev
 ```
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+
+<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-doc-readme-02-usage-md"></a>
 Usage
 -----
 
 + [Generating index.js for a Module Directory.](#generating-index-js-for-a-module-directory-)
 + [Generating nodeunit Test File.](#generating-nodeunit-test-file-)
++ [Generating mocha Test File.](#generating-mocha-test-file-)
 
 
 ### Generating index.js for a Module Directory.
@@ -73,7 +84,6 @@ if (!module.parent) {
 
 `.nodeunitTestJsBud(config)` defines a bud for nodeunit test file.
 
-
 ```javascript
 var cozTmpl = require('coz-tmpl');
 
@@ -86,6 +96,25 @@ if (!module.parent) {
     require('coz').render(__filename);
 }
 ```
+
+### Generating mocha Test File.
+
+`.mochaTestJsBud(config)` defines a bud for mocha test file.
+
+```javascript
+var cozTmpl = require('coz-tmpl');
+
+module.exports = cozTmpl.mochaTestJsBud({
+    dest: __dirname,
+    src:__dirname + '/../lib/*.js'
+});
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}
+```
+
+<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
 
 <!-- Sections Start -->
@@ -108,5 +137,7 @@ Links
 ------
 
 + [coz](https://github.com/coz-repo/coz)
++ [nodeunit](https://github.com/caolan/nodeunit)
++ [mocha](https://github.com/mochajs/mocha)
 
 <!-- Links End -->
