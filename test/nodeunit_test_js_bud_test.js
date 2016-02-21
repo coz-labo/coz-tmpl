@@ -2,11 +2,13 @@
  * Test case for nodeunitTestJsBud
  * Runs with nodeunit.
  */
+"use strict";
 
-var nodeunitTestJsBud = require('../lib/nodeunit_test_js_bud.js');
+const nodeunitTestJsBud = require('../lib/nodeunit_test_js_bud.js'),
+    assert = require('assert');
 
 exports['Nodeunit testcase js bud'] = function (test) {
-    var bud = nodeunitTestJsBud({
+    let bud = nodeunitTestJsBud({
         src: __filename,
         dest: __dirname + '/../tmp'
     });

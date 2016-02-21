@@ -2,11 +2,13 @@
  * Test case for indexJsBud
  * Runs with nodeunit.
  */
+"use strict";
 
-var indexJsBud = require('../lib/index_js_bud.js');
+const indexJsBud = require('../lib/index_js_bud.js'),
+    assert = require('assert');
 
 exports['Index js bud'] = function (test) {
-    var bud = indexJsBud({
+    let bud = indexJsBud({
         dirname: __dirname
     });
     test.ok(bud);
