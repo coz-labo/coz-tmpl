@@ -15,7 +15,7 @@ apeTasking.runTasks('release', [
     function releasePackage(callback) {
         apeReleasing.releasePackage({
             beforeRelease: [
-                './ci/build.js',
+//                './ci/build.js',
                 './ci/test.js'
             ]
         }, callback);
